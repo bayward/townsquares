@@ -1,0 +1,62 @@
+[gd_scene load_steps=7 format=3 uid="uid://dh41sqxus35m2"]
+
+[ext_resource type="Script" uid="uid://ubq2ah5yod14" path="res://node_2d_grid.gd" id="1_lvcsd"]
+[ext_resource type="PackedScene" uid="uid://bs77qsxk8aiea" path="res://Scenes/block_test.tscn" id="2_33p6a"]
+[ext_resource type="Texture2D" uid="uid://dhrtdmnmbj6rc" path="res://background/pixil-frame-0 (9).png" id="3_ffsg7"]
+[ext_resource type="Texture2D" uid="uid://bfpt5r58nx1hn" path="res://img_background.png" id="5_vwhid"]
+[ext_resource type="Texture2D" uid="uid://b7n80wgfsnaml" path="res://img_sidebar.png" id="6_a84ga"]
+
+[sub_resource type="TileSet" id="TileSet_33p6a"]
+resource_local_to_scene = true
+tile_size = Vector2i(20, 20)
+physics_layer_0/collision_layer = 1
+terrain_set_0/mode = 0
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_lvcsd")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+
+[node name="Node2D" parent="." instance=ExtResource("2_33p6a")]
+position = Vector2(513, 228)
+
+[node name="Border" type="TextureRect" parent="."]
+texture_filter = 1
+offset_left = -290.0
+offset_top = -162.0
+offset_right = 213.0
+offset_bottom = 164.0
+texture = ExtResource("3_ffsg7")
+
+[node name="GridTexture" type="TextureRect" parent="."]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.50200003
+anchor_right = 0.5
+anchor_bottom = 0.50200003
+offset_left = -256.0
+offset_top = -157.0
+offset_right = 283.5
+offset_bottom = 155.51404
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+z_index = -1
+texture_filter = 1
+position = Vector2(-6, 0)
+tile_set = SubResource("TileSet_33p6a")
+y_sort_origin = 1
+
+[node name="background" type="TextureRect" parent="."]
+offset_left = -280.0
+offset_top = -155.0
+offset_right = 202.0
+offset_bottom = 160.0
+texture = ExtResource("5_vwhid")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 212.0
+offset_top = -162.0
+offset_right = 340.0
+offset_bottom = 163.0
+texture = ExtResource("6_a84ga")
