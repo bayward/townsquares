@@ -19,12 +19,6 @@ config/icon="res://Assets/icon.svg"
 
 enabled=PackedStringArray("res://addons/sprite_painter/plugin.cfg")
 
-[importer_defaults]
-
-texture_atlas={
-&"atlas_file": "\"C:\\Users\\benha\\OneDrive\\Documents\\city-block\\townsquares\\Scenes\\Tiles_map.tres\""
-}
-
 [input]
 
 "Place block"={

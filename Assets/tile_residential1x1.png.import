@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjafchnybre6p"
-path="res://.godot/imported/shop_background1.png-1f4ba781df3873ef9e7505561a07dd2d.ctex"
+uid="uid://duiltmfi3vhsd"
+path="res://.godot/imported/tile_residential1x1.png-197584d5d3a936ff4ef5c1a07f9800b1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://background/shop_background1.png"
-dest_files=["res://.godot/imported/shop_background1.png-1f4ba781df3873ef9e7505561a07dd2d.ctex"]
+source_file="res://Assets/tile_residential1x1.png"
+dest_files=["res://.godot/imported/tile_residential1x1.png-197584d5d3a936ff4ef5c1a07f9800b1.ctex"]
 
 [params]
 
