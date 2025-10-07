@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://2d1lqkjl7784"]
+
+[ext_resource type="Texture2D" uid="uid://vxkx80rms06k" path="res://Assets/tile.png" id="1_6kwrw"]
+
+[node name="Node2D_Tiles" type="Node2D"]
+texture_filter = 1
+position = Vector2(-1, 2)
+
+[node name="Tile" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(11, 8)
+texture = ExtResource("1_6kwrw")
